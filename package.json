@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run test:distance & npm run test:style & npm run test:total",
+    "test:distance": "mocha calculateDistancePoints.test.js",
+    "test:style": "mocha calculateStylePoints.test.js",
+    "test:total": "mocha calculateTotalPoints.test.js"
   },
   "author": "",
   "license": "ISC",
